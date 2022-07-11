@@ -1,0 +1,66 @@
+.form-body{
+    height: 60vh;
+    width:110vh;
+    border: 2px solid black;
+    padding-left: 2vh;
+    padding-top: 2vh;
+    margin: 15vh 40vh 20vh 40vh;
+    background-color:black;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: row;
+}
+.form-body button{
+    margin: 0vh 3vh 1vh 15vh;
+    border-radius:1vh;
+    padding: 1vh 2vh 1vh 2vh;
+    color:black;
+    background-color:rgb(70, 198, 70);
+
+}
+.form-body a{
+    background-color: black;
+}
+.form-body .form{
+    background-color:black;
+}
+.form-body .each-input-block{
+    background-color:black;
+}
+.form-body label h3,input,label{
+    background-color: black;
+    color: white;
+}
+
+.Imagecontent{
+    width: 60vh;
+    margin-right: 2vh;
+    height: 50vh;
+    background-color:black;
+}
+.Imagecontent img{
+    height: 55vh;
+    width: 55vh;
+    border-radius: 2vh;
+}
+h2{
+    color:white;
+    background-color:black;
+    margin-left: 8vh;
+}
+input[type="text"],input[type="email"],input[type="password"]{
+    background-color: white;
+    color: black;
+
+}
+h5{
+    background-color: black;
+    color: white;
+}
+h5 a{
+    text-decoration: none;
+    color: red;
+    background-color: black;
+}
+
+

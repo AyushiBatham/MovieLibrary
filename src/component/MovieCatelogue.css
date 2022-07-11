@@ -1,0 +1,51 @@
+
+
+.card-details{
+    height: 52vh;
+    width: 36vh;
+   background-color:black;
+    
+  }
+  .container-fluid,.navbar-brand,.nav-item,.nav-link_active,.d-flex{
+    background-color: black;
+  }
+  .nav-link_active{
+    text-decoration: none;
+    color: white;
+  }
+  .card-details h3{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    color: white;
+    background-color:black;
+  }
+  .card-details img{
+    padding: 1vh;
+    background-color: black;
+    height: 42vh;
+    width: 35vh;
+  }
+  .card{
+    display: flex;
+    flex-direction:column;
+    float: right;
+    margin: 3vh 3vh 2vh 7vh;
+   
+    background-color:black;
+  }
+  .card button{
+    
+    margin-left: 12vh;
+    
+    margin-bottom: 1vh;
+    border-radius: 1vh;
+    background-color:red;
+    color: wheat;
+  }
+  *{
+    background-color: rgb(236, 120, 120);
+  }
+  
+  
