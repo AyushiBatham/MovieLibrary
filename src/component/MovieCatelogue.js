@@ -39,6 +39,7 @@ function MovieCatelogue() {
     };
     
     movielist.push(user)
+    localStorage.setItem("wishlist",JSON.stringify(user));
     
     console.log(movielist);
   }
@@ -73,7 +74,8 @@ function MovieCatelogue() {
           <div className="card-details">
           <h3 key={index}>{moviedata.Title}</h3>
           <img src={moviedata.Poster}/>
-          <button onClick={(event)=>addToList(moviedata.Poster,moviedata.Title)}>Add To List</button>
+          <a href="/ShowWish">
+          <button onClick={(event)=>addToList(moviedata.Poster,moviedata.Title)}>Add To List</button></a>
           </div></div>
       })
 
