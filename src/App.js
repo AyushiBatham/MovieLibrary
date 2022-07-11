@@ -14,7 +14,7 @@ import showWishList from "./component/showWishList";
 
 function App() {
     return (
-    <BrowserRouter>
+      <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Registeration} />
         <Route path="/MovieCatelogue" exact component={MovieCatelogue} />

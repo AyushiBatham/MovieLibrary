@@ -9,10 +9,13 @@ import { Link } from "react-router-dom";
 import showWishList from "./showWishList";
 import { Redirect } from "react-router-dom";
 
+
 function MovieCatelogue() {
   const [movieList,setMovieList]=useState([]);
   const [inputTexts,setInputTexts]=useState("");
   const [movieArrays,setMovieArrays]=useState([]);
+ 
+  
   const changeInputData=(event)=>{
     setInputTexts(event.target.value)
   }
@@ -40,8 +43,11 @@ function MovieCatelogue() {
     
     movielist.push(user)
     localStorage.setItem("wishlist",JSON.stringify(user));
+
+    
     
     console.log(movielist);
+
   }
   function showWi(){
     <Link to="/ShowWish" ></Link>
@@ -55,13 +61,13 @@ function MovieCatelogue() {
     <a class="navbar-brand">MOVIE-LIBRARY</a>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-        <Link to="/ShowWish" ><div class="nav-link_active" aria-current="page" >Home</div></Link>
+        <a href="/ShowWish" ><div class="nav-link_active" aria-current="page" >Home</div></a>
         </li>
     </ul>
     <form class="d-flex" role="search" onSubmit={getMovies}>
       <input class="form-control me-2" type="search" placeholder="Enter Movie Name" aria-label="Search" value={inputTexts} onChange={changeInputData}/>
       <button class="btn btn-outline-success" type="submit">Search</button>
-      
+     
     </form>
     
   </div>
@@ -74,8 +80,9 @@ function MovieCatelogue() {
           <div className="card-details">
           <h3 key={index}>{moviedata.Title}</h3>
           <img src={moviedata.Poster}/>
-          <a href="/ShowWish">
-          <button onClick={(event)=>addToList(moviedata.Poster,moviedata.Title)}>Add To List</button></a>
+          
+          <button onClick={(event)=>addToList(moviedata.Poster,moviedata.Title)}>Add To List</button>
+          
           </div></div>
       })
 

@@ -13,6 +13,7 @@ function Registeration() {
   const [password, setPassword] = useState();
 
   function printVal(event, name, email, password) {
+    localStorage.setItem("username",JSON.stringify(name));
     const user = {
       name: name,
       email: email,
@@ -24,6 +25,7 @@ function Registeration() {
     setName("");
     setEmail("");
     setPassword("");
+    
    
   }
 

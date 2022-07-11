@@ -1,26 +1,31 @@
 import React from 'react'
-
+import "./showWishList.css";
+import {arr} from "./arr"
 
 function showWishList() {
    let movielist=localStorage.getItem("wishlist");
    const obj=JSON.parse(movielist);
-  console.log(obj);
+ // console.log(obj);
    
    //console.log(obj[0].Title);
-   const arr=[];
+   
    arr.push(obj);
-console.log(arr)
+console.log(arr);
+function delte(e){
+  arr.pop(e);
+}
     return(
 
     <div>
+      <h1>WishList</h1>
     {
        
-        arr.map((index)=>{
-            return <div>
-          <h3 key={index}>{index.Title}</h3>
+        arr.map((index,i)=>{
+            return <div className="card">
+            <div className="card-details">
+          <h3 key={i}>{index.Title}</h3>
           <img src={index.Poster}/>
-          <button >delete from List</button>
-         </div>
+         </div></div>
         })
     }
   </div>);
