@@ -80,7 +80,7 @@ function Registeration() {
               Register
             </button>
           </a>
-        <h5>Already have account ? <Link to="/">Login</Link></h5>
+        <h5>Already have account ? <Link to="/login">Login</Link></h5>
         </div>
       </div>
     </>
