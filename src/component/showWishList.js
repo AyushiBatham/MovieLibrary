@@ -16,8 +16,11 @@ function delte(e){
 }
     return(
 
-    <div>
-      <h1>WishList</h1>
+    <div >
+      <div className='header'>
+      
+      <h1>WishList</h1><a href='/MovieCatelogue'><h2>Search</h2></a>
+    </div>
     {
        
         arr.map((index,i)=>{

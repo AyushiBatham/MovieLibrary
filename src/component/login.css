@@ -1,4 +1,4 @@
-.form-body{
+.form-body-login{
     height: 60vh;
     width:85vh;
     border: 2px solid black;
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: row;
 }
-.form-body button{
+.form-body-login button{
     margin: 0vh 2vh 1vh 15vh;
     border-radius:1vh;
     padding: 1vh 2vh 1vh 2vh;
@@ -18,16 +18,16 @@
     background-color:rgb(70, 198, 70);
 
 }
-.form-body a{
+.form-body-login a{
     background-color: black;
 }
-.form-body .form{
+.form-body-login .form{
     background-color:black;
 }
-.form-body .each-input-block{
+.form-body-login .each-input-block-login{
     background-color:black;
 }
-.form-body label h3,input,label{
+.form-body-login label h3,input,label{
     background-color: black;
     color: white;
 }

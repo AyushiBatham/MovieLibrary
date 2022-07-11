@@ -4,7 +4,7 @@ import "./login.css";
 function Loginn() {
   return (
     <>
-    <div className="form-body">
+    <div className="form-body-login">
         
         <div className="Imagecontent">
           <img src="https://as2.ftcdn.net/v2/jpg/01/34/18/03/1000_F_134180328_siMnreIa3S9nYEtH6IL6tbevQGdtrtQa.jpg"/>
@@ -14,7 +14,7 @@ function Loginn() {
         <h2>Login</h2>
 
         
-        <div className="each-input-block">
+        <div className="each-input-block-login">
             <label ><h3>Email</h3></label><br/>
             <input
               type="email"
@@ -24,7 +24,7 @@ function Loginn() {
             />
         </div>
         <br/>
-        <div className="each-input-block">
+        <div className="each-input-block-login">
             <label ><h3>Password</h3></label><br/>
             <input
               type="password"

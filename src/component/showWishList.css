@@ -51,5 +51,32 @@
     text-align: center;
     
   }
+  .header{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    padding-left: 80vh;
+    background-color: black;
+  }
+  .header a {
+    
+    margin-left: 70vh;
+    padding-right:25vh;
+    text-align: center;
+    text-decoration: none;
+    background-color:black ;
+    width: 9vh;
+    
+  }
+  h1{
+    background-color: black;
+    color: white;
+  }
+  .header a h2{
+    color: green;
+  }
+   
   
   

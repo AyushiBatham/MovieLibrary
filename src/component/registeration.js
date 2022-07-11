@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {Link } from "react-router-dom";
 import "./registeration.css";
@@ -50,6 +49,7 @@ function Registeration() {
               size="40"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              required
             />
         </div><br/>
         <div className="each-input-block">
@@ -60,6 +60,7 @@ function Registeration() {
               size="40"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
         </div>
         <br/>
@@ -71,6 +72,7 @@ function Registeration() {
               size="40"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
         </div>
         <br/>
