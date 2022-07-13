@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {Link } from "react-router-dom";
+import MovieCatelogue from "./MovieCatelogue";
 import "./registeration.css";
 import { Users } from "./Users";
 
@@ -21,11 +22,8 @@ function Registeration() {
     Users.push(user);
     localStorage.setItem("usersArray", Users);
     console.log(Users);
-    setName("");
-    setEmail("");
-    setPassword("");
     
-   
+    
   }
 
     return(
@@ -38,7 +36,7 @@ function Registeration() {
           <img src="https://as2.ftcdn.net/v2/jpg/01/34/18/03/1000_F_134180328_siMnreIa3S9nYEtH6IL6tbevQGdtrtQa.jpg"/>
       </div>
       <div  className="form" >
-      
+      <form action="/MovieCatelogue" >
         <h2>Create Account</h2>
 
         <div className="each-input-block" >
@@ -77,12 +75,13 @@ function Registeration() {
         </div>
         <br/>
         
-        <a href="/MovieCatelogue">
+        
             <button onClick={(event) => printVal(name, email, password)}>
               Register
             </button>
-          </a>
-        <h5>Already have account ? <Link to="/login">Login</Link></h5>
+          
+        <h5>Already have account ? <a href="/login">Login</a></h5>
+        </form>
         </div>
       </div>
     </>

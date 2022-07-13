@@ -42,6 +42,7 @@ function MovieCatelogue() {
     };
     
     movielist.push(user);
+    alert("Added to Wishlist");
     
     localStorage.setItem("wishlist",JSON.stringify(movielist));
 
