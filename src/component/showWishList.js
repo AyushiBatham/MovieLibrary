@@ -11,27 +11,31 @@ function showWishList() {
    
    arr.push(obj);
 console.log(arr);
+console.log(arr.Title);
 function delte(e){
   arr.pop(e);
 }
     return(
-
+      
     <div >
       <div className='header'>
       
       <h1>WishList</h1><a href='/MovieCatelogue'><h2>Search</h2></a>
+
     </div>
     {
        
-        arr.map((index,i)=>{
+        obj.map((index,i)=>{
             return <div className="card">
             <div className="card-details">
           <h3 key={i}>{index.Title}</h3>
           <img src={index.Poster}/>
          </div></div>
         })
+        
     }
   </div>);
+ 
 
 }
 

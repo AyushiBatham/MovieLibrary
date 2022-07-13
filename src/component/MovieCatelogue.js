@@ -4,7 +4,7 @@ import axios from "axios";
 import "./MovieCatelogue.css";
 import "./ListOfMovies";
 import ListOfMovies from "./ListOfMovies";
-import { movielist } from "./movielist";
+//import { movielist } from "./movielist";
 import { Link } from "react-router-dom";
 import showWishList from "./showWishList";
 import { Redirect } from "react-router-dom";
@@ -15,7 +15,7 @@ function MovieCatelogue() {
   const [inputTexts,setInputTexts]=useState("");
   const [movieArrays,setMovieArrays]=useState([]);
  
-  
+  const movielist=[];
   const changeInputData=(event)=>{
     setInputTexts(event.target.value)
   }
@@ -41,12 +41,13 @@ function MovieCatelogue() {
      Poster:poster
     };
     
-    movielist.push(user)
-    localStorage.setItem("wishlist",JSON.stringify(user));
+    movielist.push(user);
+    
+    localStorage.setItem("wishlist",JSON.stringify(movielist));
 
     
     
-    console.log(movielist);
+    console.log("movielist",movielist);
 
   }
   function showWi(){
@@ -61,12 +62,12 @@ function MovieCatelogue() {
     <a class="navbar-brand">MOVIE-LIBRARY</a>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-        <a href="/ShowWish" ><div class="nav-link_active" aria-current="page" >Home</div></a>
+        <a href="/ShowWish" ><div class="nav-link_active" aria-current="page"  >Home</div></a>
         </li>
     </ul>
     <form class="d-flex" role="search" onSubmit={getMovies}>
       <input class="form-control me-2" type="search" placeholder="Enter Movie Name" aria-label="Search" value={inputTexts} onChange={changeInputData}/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-outline-success" type="submit" >Search</button>
      
     </form>
     
