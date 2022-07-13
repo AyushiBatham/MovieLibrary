@@ -47,10 +47,7 @@
   *{
     background-color: rgb(236, 120, 120);
   }
-  h1{
-    text-align: center;
-    
-  }
+  
   .header{
     height: 7vh;
     width: 100%;
@@ -60,23 +57,31 @@
     padding-left: 80vh;
     background-color: black;
   }
-  .header a {
-    
-    margin-left: 70vh;
-    padding-right:25vh;
-    text-align: center;
-    text-decoration: none;
+  .header a h2 {
+    text-align: right;
+   
+    padding-left: 58vh;
     background-color:black ;
     width: 9vh;
-    
+
   }
-  h1{
+  .header a {
+     text-decoration: none;
+  }
+  .header .right{
+    background-color:black ;
+  }
+  h1,.header h3{
     background-color: black;
     color: white;
   }
   .header a h2{
     color: green;
   }
+  .header .left{
+    background-color: black;
+  }
+
    
   
   

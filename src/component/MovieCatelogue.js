@@ -14,7 +14,7 @@ function MovieCatelogue() {
   const [movieList,setMovieList]=useState([]);
   const [inputTexts,setInputTexts]=useState("");
   const [movieArrays,setMovieArrays]=useState([]);
- 
+  const usern=localStorage.getItem("username");
   const movielist=[];
   const changeInputData=(event)=>{
     setInputTexts(event.target.value)
@@ -42,7 +42,7 @@ function MovieCatelogue() {
     };
     
     movielist.push(user);
-    alert("Added to Wishlist");
+    alert("Added to Wishlist of "+usern );
     
     localStorage.setItem("wishlist",JSON.stringify(movielist));
 
@@ -69,7 +69,8 @@ function MovieCatelogue() {
     <form class="d-flex" role="search" onSubmit={getMovies}>
       <input class="form-control me-2" type="search" placeholder="Enter Movie Name" aria-label="Search" value={inputTexts} onChange={changeInputData}/>
       <button class="btn btn-outline-success" type="submit" >Search</button>
-     
+      
+      
     </form>
     
   </div>

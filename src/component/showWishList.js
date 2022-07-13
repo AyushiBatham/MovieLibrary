@@ -5,6 +5,7 @@ import {arr} from "./arr"
 function showWishList() {
    let movielist=localStorage.getItem("wishlist");
    const obj=JSON.parse(movielist);
+   
  // console.log(obj);
    
    //console.log(obj[0].Title);
@@ -19,8 +20,12 @@ function delte(e){
       
     <div >
       <div className='header'>
-      
-      <h1>WishList</h1><a href='/MovieCatelogue'><h2>Search</h2></a>
+      <div className='left'>
+       
+      <h1>WishList</h1></div>
+      <div className='right'>
+      <a href='/MovieCatelogue'><h2>Search</h2></a>
+      </div>
 
     </div>
     {
